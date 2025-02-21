@@ -10,8 +10,14 @@
     html { zoom: 0.42; } /* scale down for mobile phones, further beyond */  
 }
 
+@font-face {
+    font-family: 'Mincho';
+    src: url('tf/MS_Mincho_Regular.ttf') format('truetype');
+}
+
+
 body {	
-	font-family: MS Mincho;
+	font-family: 'Mincho';
 	color: white;
 	font-size: 18px;
 	background-color: #111111;
