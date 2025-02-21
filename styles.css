@@ -1,3 +1,15 @@
+@media (max-width: 650px) {  
+    html { zoom: 0.8; } /* scale down for tablets and smaller screens */  
+}  
+
+@media (max-width: 480px) {  
+    html { zoom: 0.5; } /* scale down for mobile phones */  
+}
+
+@media (max-width: 360px) {  
+    html { zoom: 0.42; } /* scale down for mobile phones, further beyond */  
+}
+
 body {	
 	font-family: MS Mincho;
 	color: white;
