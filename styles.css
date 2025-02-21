@@ -1,0 +1,201 @@
+body {	
+	font-family: MS Mincho;
+	color: white;
+	font-size: 18px;
+	background-color: #111111;
+}
+
+/*Hyperlink Colors */
+a {
+	color: #97D077;
+}
+
+p, p1, h1, h3, h4{	
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: justify;
+}
+
+#indented {
+	text-indent: 35px;
+}
+
+#centered {
+	text-align: center;
+}
+
+
+/* CONTAINER */
+#main_container {
+	width: 800px;	
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#horizontal_container {
+	display: flex;
+	gap: 10px; 
+}
+
+#horizontal_container > div:last-child {
+	flex: 1; 
+	overflow-wrap: break-word; 
+}
+
+
+/* HEADER */
+#header {
+	height: 200px;
+	/*border: 1px solid #FFFFFF;*/
+}
+
+#header_img {
+	width: 100%;
+	height: 100%;
+	background-image: url('2-clannad-1375834.jpg');
+	background-size: 100% auto;
+	background-position: center;
+}
+
+
+/* CONTENT */
+#content {
+	border: 1px solid #666666;
+	background: #222222;
+	padding: 15px;
+	max-height: 900px;
+	overflow-y: auto;
+
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+#content:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2) !important;
+}
+
+#content_spacer{
+	margin-bottom: 24px;
+}
+
+#profile_img {
+	width: 200px;
+	height: 200px;
+	margin: 18px 10px;
+	background-image: url('yuzuru-otonashi-foto.jpg');
+	background-size: 100% auto;
+	background-position: center;
+	flex-shrink: 0;
+}
+
+
+
+/* TREE */
+#tree {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+#node {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 20px; /* Space between boxes */
+    padding-left: 30px; /* Space for the horizontal line */
+}
+
+/*Vertical Connector*/
+#node::before {
+    content: "";
+    position: absolute;
+    left: 15px; 
+    top: -20px; /* Extend upwards */
+    bottom: 0; /* Extend downwards */
+    width: 1px;	
+    background-color: #666666;
+}
+
+/* Horizontal connectors */
+#node::after {
+    content: "";
+    position: absolute;
+    left: 15px; /* Align with vertical line */
+    width: 15px; /* Shorter horizontal connector */
+    height: 1px;
+    background-color: #666666;
+}
+
+#node:last-of-type::before {
+    bottom: 50%;
+}
+
+
+/* PROJECT  */
+#project_text_container {
+	width: 322px;	
+	margin: 5px 3px;
+}
+
+#DAA_img, #Typocalypse_img, #CrowdSimulator_img{
+	width: 400px;
+	height: 300px;		
+	background-size: cover; 
+}
+
+#DAA_img {
+	background-image: url('DAA1.gif');	
+}
+
+#Typocalypse_img {
+	background-image: url('Typocalypse1.gif');	
+}
+
+#CrowdSimulator_img{
+	background-image: url('CrowdSimulator1.gif');	
+	background-position: right center;
+}
+
+#tool_column_container{
+	width: 738px;
+	display: flex;
+	justify-content: center;  
+    align-items: center;  
+}
+
+#tool_container{
+	width: 110px;
+	display: flex;
+    flex-direction: column; 
+    justify-content: center;  
+    align-items: center;  
+}
+
+
+#java_img, #python_img, #js_img, #sqlite_img, #mariadb_img, #h2db_img, #gimp_img, #drawio_img{
+	width: 64px;
+	height: 64px;
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 8px;
+}
+
+#java_img{ 	background-image: url('java.png'); }
+#python_img{ background-image: url('python.png'); }
+#js_img{ background-image: url('javascript.png'); }
+#sqlite_img{ background-image: url('sqlite.png'); }
+#mariadb_img{ background-image: url('mariadb.png'); }
+#h2db_img{ background-image: url('h2db.png'); }
+#gimp_img{ background-image: url('gimp.png'); }
+#drawio_img{ background-image: url('drawio.png'); }
+
+
+
+footer {
+    text-align: center;
+}
+
+
